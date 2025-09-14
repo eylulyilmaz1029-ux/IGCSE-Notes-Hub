@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>IGCSE Open Notes</title>
+  <meta name="description" content="Free, high-quality IGCSE resources for students worldwide." />
+  <style>
+    :root{--bg:#ffffff;--text:#0b1220;--muted:#6b7280;--brand:#2563eb;--card:#f8fafc}
+    *{box-sizing:border-box}
+    body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; color:var(--text); background:var(--bg); line-height:1.45}
+    header{display:flex;justify-content:space-between;align-items:center;padding:28px 36px;border-bottom:1px solid #eef2f7}
+    .logo{font-weight:700;font-size:20px}
+    nav a{margin-left:18px;color:var(--text);text-decoration:none;font-weight:600}
+    .container{max-width:1100px;margin:28px auto;padding:0 20px}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:28px 0}
+    .hero h1{font-size:44px;margin:0 0 18px}
+    .hero p{color:var(--muted);margin:0 0 22px}
+    .btn{background:var(--brand);color:white;padding:12px 18px;border-radius:10px;border:0;font-weight:700;cursor:pointer}
+    .card-row{display:flex;gap:18px;margin-top:22px}
+    .card{background:var(--card);padding:18px;border-radius:12px;flex:1}
+    .stats{display:flex;justify-content:space-between;margin-top:34px}
+    .stat{flex:1;text-align:center;padding:18px}
+    .stat h3{font-size:34px;margin:0}
+    .subjects{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:26px}
+    .subject{padding:16px;border-radius:10px;border:1px solid #eef2f7;background:white}
+    footer{padding:28px 36px;border-top:1px solid #eef2f7;margin-top:34px;color:var(--muted)}
+    .grid-2{display:grid;grid-template-columns:1fr 300px;gap:20px}
+    @media(max-width:880px){
+      .hero{grid-template-columns:1fr;}
+      nav a{display:none}
+      .grid-2{grid-template-columns:1fr}
+    }
+    .mini{font-size:13px;color:var(--muted)}
+    .blog-list{display:flex;flex-direction:column;gap:12px}
+    .blog-item{padding:12px;border-radius:10px;border:1px solid #eef2f7;background:white}
+    .contributors{display:flex;gap:10px;flex-wrap:wrap}
+    .contributor{padding:8px 10px;border-radius:8px;background:#fff;border:1px solid #eef2f7}
+    .search{display:flex;gap:8px}
+    .search input{flex:1;padding:10px;border-radius:10px;border:1px solid #e6eefc}
+    .badge{display:inline-block;padding:6px 8px;border-radius:999px;background:#eef6ff;color:var(--brand);font-weight:700;font-size:12px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">IGCSE Open Notes</div>
+    <nav>
+      <a href="#subjects">Subjects</a>
+      <a href="#quizzes">Quizzes</a>
+      <a href="#blog">Blog</a>
+      <a href="#contributors">Contributors</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <div class="badge">Free · Open-access</div>
+        <h1>Free, high‑quality IGCSE resources for students worldwide</h1>
+        <p class="mini">Concise notes, past‑paper walkthroughs, quizzes, and study tips — all curated &amp; organized for faster revision.</p>
+        <div style="margin-top:18px">
+          <button class="btn" onclick="location.href='#subjects'">Start Learning</button>
+        </div>
+
+        <div class="card-row">
+          <div class="card">
+            <strong>Subject of the Month: Mathematics</strong>
+            <p class="mini">Deep dive into algebra &amp; geometry — short notes + 20 practice questions.</p>
+            <a href="#" class="mini">Learn more →</a>
+          </div>
+          <div class="card">
+            <strong>Testimonials</strong>
+            <p class="mini">“This site was a lifesaver during mocks.” — Student from India</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align:center">
+        <!-- simple illustrative SVG -->
+        <svg width="320" height="240" viewBox="0 0 320 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="12" y="50" width="296" height="160" rx="12" fill="#eaf2ff" stroke="#cfe3ff"/>
+          <rect x="32" y="72" width="160" height="22" rx="6" fill="#ffffff" stroke="#cfe3ff"/>
+          <rect x="32" y="102" width="120" height="14" rx="4" fill="#ffffff" stroke="#cfe3ff"/>
+          <path d="M208 72L276 144" stroke="#2563eb" stroke-width="8" stroke-linecap="round"/>
+          <circle cx="232" cy="96" r="10" fill="#2563eb"/>
+        </svg>
+      </div>
+    </section>
+
+    <section id="bythenumbers" style="margin-top:8px">
+      <div class="stats">
+        <div class="stat"><h3 id="stat-users">2,000+</h3><div class="mini">students reached</div></div>
+        <div class="stat"><h3 id="stat-countries">15</h3><div class="mini">countries</div></div>
+        <div class="stat"><h3 id="stat-downloads">10,000+</h3><div class="mini">downloads</div></div>
+      </div>
+    </section>
+
+    <section id="subjects" style="margin-top:34px">
+      <h2>Subjects</h2>
+      <div class="subjects">
+        <div class="subject"><strong>Mathematics</strong><p class="mini">Notes • Past papers • Flashcards</p></div>
+        <div class="subject"><strong>Physics</strong><p class="mini">Key formulas • Diagrams • Tips</p></div>
+        <div class="subject"><strong>Chemistry</strong><p class="mini">Reactions &amp; exam practice</p></div>
+        <div class="subject"><strong>Biology</strong><p class="mini">Diagrams &amp; definition list</p></div>
+        <div class="subject"><strong>English</strong><p class="mini">Paper 1 &amp; 2 guides</p></div>
+        <div class="subject"><strong>History</strong><p class="mini">Timeline summaries</p></div>
+      </div>
+    </section>
+
+    <section id="quizzes" style="margin-top:30px">
+      <h2>Interactive tools</h2>
+      <div class="grid-2">
+        <div>
+          <p class="mini">Short quizzes &amp; flashcards — embed Quizlet or Google Forms here. Below is a simple in-page sample quiz you can expand later.</p>
+          <div style="margin-top:12px;padding:14px;background:#fff;border:1px solid #eef2f7;border-radius:10px">
+            <form id="sample-quiz" onsubmit="return false">
+              <label class="mini">1) What is 7 × 8?</label>
+              <div style="margin:8px 0"><input type="radio" name="q1" value="48"> 48<br><input type="radio" name="q1" value="54"> 54<br><input type="radio" name="q1" value="56"> 56</div>
+              <button class="btn" onclick="checkQuiz()">Check Answer</button>
+              <div id="quiz-result" class="mini" style="margin-top:8px"></div>
+            </form>
+          </div>
+        </div>
+
+        <aside>
+          <strong>Flashcards</strong>
+          <p class="mini">Download PDF flashcard packs for quick revision.</p>
+          <button class="btn" onclick="alert('Download placeholder')">Download pack</button>
+        </aside>
+      </div>
+    </section>
+
+    <section id="blog" style="margin-top:30px">
+      <h2>Blog / Study Tips</h2>
+      <div class="blog-list">
+        <div class="blog-item"><strong>How I balanced study with extracurriculars</strong><div class="mini">Aug 2025 • 4‑min read</div></div>
+        <div class="blog-item"><strong>5 tricks for memorising biology diagrams</strong><div class="mini">Jul 2025 • 3‑min read</div></div>
+      </div>
+    </section>
+
+    <section id="contributors" style="margin-top:30px">
+      <h2>Contributors</h2>
+      <p class="mini">Peer-contributed notes — credited. Want to contribute? Use the contributor form (link) to submit.</p>
+      <div class="contributors">
+        <div class="contributor">A.H. — Mathematics</div>
+        <div class="contributor">L.T. — Biology</div>
+        <div class="contributor">M.S. — English</div>
+      </div>
+    </section>
+
+    <section id="about" style="margin-top:30px;padding-bottom:30px">
+      <h2>About</h2>
+      <p class="mini">IGCSE Open Notes is a student-founded, open-access resource created to help learners who lack private tuition. Founded by a Year 11 student in Northern Cyprus. Contact: <a href="mailto:hello@igcseopennotes.example">hello@igcseopennotes.example</a></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap">
+        <div class="mini">© IGCSE Open Notes — Built with care.</div>
+        <div class="mini">Analytics • Contributors • Terms</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function checkQuiz(){
+      const chosen = document.querySelector('input[name="q1"]:checked');
+      const result = document.getElementById('quiz-result');
+      if(!chosen){ result.textContent = 'Pick an option.'; return; }
+      if(chosen.value === '56') result.textContent = 'Correct ✅'; else result.textContent = 'Not quite — try again.';
+    }
+
+    // smooth scroll for nav links
+    document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click', e=>{e.preventDefault();document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'});}));
+
+    // example of incrementing stats (placeholder)
+    (function animateStats(){
+      const u = document.getElementById('stat-users');
+      let n = 2000; let c=0;
+      const iv=setInterval(()=>{ if(c++>20){ clearInterval(iv); u.textContent = '2,000+'; } else u.textContent = (n + c*50).toLocaleString()+'+'; },60);
+    })();
+  </script>
+</body>
+</html>
